@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "netflix-clone"
+    }
+  },
+  "defaultProject": "netflix-clone",
+  "cli": {
+    "analytics": "24c7a49d-3198-4e46-866f-d4e289bc004e"
+  }
 }
