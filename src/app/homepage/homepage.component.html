@@ -1,8 +1,47 @@
-<div class="">
-  <h2>NETFLIX ORIGINALS</h2>
-  <div>
+<div class="container">
+  <div class="header">
+    <div class="header_banner">
+      <h2>TITLE</h2>
+      <div class="header_buttons"
+      [ngStyle]="{
+        'background-image': 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3))'
+      }"
+      >
+        <button class="play-button">
+          <mat-icon>arrow_right</mat-icon>
+          <span>Play</span>
+        </button>
+
+        <button class="more-button">
+          <mat-icon>info</mat-icon>
+          <span>More Info</span>
+        </button>
+      </div>
+    </div>
+    <div class="header_main" id="stickyHeader" [class.sticky]="sticky" #stickHeader>
+      <div class="header_left">
+        <a routerLink="/">
+          <img src="assets/netflix_logo.png" alt="logo" style="max-width: 100%">
+        </a>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Lastest</a></li>
+          <li><a href="#">My List</a></li>
+        </ul>
+      </div>
+      <div class="header_right">
+        <ul>
+          <li><a href="#"><mat-icon>search</mat-icon></a></li>
+          <li><a href="#"><mat-icon>card_giftcard</mat-icon></a></li>
+          <li><a href="#"><mat-icon>notifications</mat-icon></a></li>
+          <li>
+            <img src="" alt=""
+          </li>
+        </ul>
+
+      </div>
+    </div>
   </div>
-</div>
-<div>
-  <h2>Trending Now</h2>
 </div>
