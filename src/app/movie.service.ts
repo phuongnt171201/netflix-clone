@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {Observable} from "rxjs";
+import {Movie} from "./model/movie";
 
 
 @Injectable({
@@ -9,8 +11,8 @@ export class MovieService {
 
   constructor(private http: HttpClient) {
   }
-  getNetflixOriginals(api_key: string){
-    return this.http.get(`https://api.themoviedb.org/3/discover/tv?api_key=${api_key}&with_networks=213`);
+  getNetflixOriginals(api_key: string): Observable<Movie>{
+    return this.http.get<Movie>(`https://api.themoviedb.org/3/discover/tv?api_key=${api_key}&with_networks=213`);
 
   }
   getTopRated(api_key: string){
