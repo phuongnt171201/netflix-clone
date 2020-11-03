@@ -45,16 +45,18 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
-
+<body>
 <div>
   <h2>NETFLIX ORIGINALS</h2>
   <div class="row_posters">
-    <ngx-slick-carousel [config]="sliderConfig" class="carousel">
-      <div *ngFor="let movie of movies">
-        <img class="row" src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="{{movie.title}}">
-      </div>
-    </ngx-slick-carousel>
+    <!--    <ngx-slick-carousel [config]="sliderConfig" class="carousel">-->
+    <div class="row_poster" *ngFor="let movie of movies">
+      <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="{{movie.title}}">
+    </div>
+    <!--    </ngx-slick-carousel>-->
 
   </div>
 
 </div>
+</body>
+

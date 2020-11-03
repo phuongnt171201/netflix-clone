@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import {MatIconModule} from '@angular/material/icon';
 import {SlickCarouselModule} from "ngx-slick-carousel";
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    SlideComponent
   ],
     imports: [
         BrowserModule,
