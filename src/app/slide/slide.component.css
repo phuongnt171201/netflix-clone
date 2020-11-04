@@ -60,6 +60,12 @@ h2 {
   padding: 0px;
 }
 
+.carousel-control{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
 
 @media (min-width: 768px) {
 
