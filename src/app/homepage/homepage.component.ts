@@ -19,23 +19,23 @@ export class HomepageComponent implements OnInit {
   };
 
   constructor(private movieService: MovieService) {
-    this.loadNetflixOriginals();
+    // this.loadNetflixOriginals();
   }
 
   ngOnInit(): void {
   }
 
-  loadNetflixOriginals() {
-    this.movieService.getNetflixOriginals(this.API_KEY).subscribe((res: any) => {
-      if (res) {
-        this.movies = res.results;
-        // this.movies.map((movie) => )
-        console.log(this.movies);
-      } else {
-        console.error(`Call api get movie error: ${res.data}`);
-      }
-    });
-  }
+  // loadNetflixOriginals() {
+  //   this.movieService.getNetflixOriginals(this.API_KEY).subscribe((res: any) => {
+  //     if (res) {
+  //       this.movies = res.results;
+  //       // this.movies.map((movie) => )
+  //       console.log(this.movies);
+  //     } else {
+  //       console.error(`Call api get movie error: ${res.data}`);
+  //     }
+  //   });
+  // }
 
 
 }

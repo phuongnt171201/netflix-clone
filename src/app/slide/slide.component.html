@@ -1,12 +1,21 @@
 <div>
-  <h2>{{title}}</h2>
-  <div class="row_posters">
+  <h2>{{titleSlide}}</h2>
+  <div class="row_posters carousel slide multi-item-carousel w-100" data-ride="carousel">
     <!--    <ngx-slick-carousel [config]="sliderConfig" class="carousel">-->
-    <div class="row_poster" *ngFor="let movie of movies">
-      <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="{{movie.title}}">
+    <div class="row_poster carousel-inner" *ngFor="let movie of movies">
+      <div class="item active">
+        <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="{{movie.title}}">
+      </div>
+
     </div>
+    <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+      class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+      class="glyphicon glyphicon-chevron-right"></i></a>
+
     <!--    </ngx-slick-carousel>-->
 
   </div>
 
 </div>
+

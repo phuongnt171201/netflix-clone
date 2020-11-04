@@ -12,7 +12,11 @@
 </head>
 <body>
 <!--<app-homepage></app-homepage>-->
-<app-slide title="netflix originals"></app-slide>
+<app-slide titleSlide="Netflix Originals" [movies]="originals"></app-slide>
+<app-slide titleSlide="Popular On Netflix" [movies]="popular"></app-slide>
+<app-slide titleSlide="Trending Now" [movies]="trending"></app-slide>
+<app-slide titleSlide="Continue Watching for You" [movies]="nowPlaying"></app-slide>
+<app-slide titleSlide="Top Rated" [movies]="topRated"></app-slide>
 
 <!-- Optional JavaScript; choose one of the two! -->
 

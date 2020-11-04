@@ -9,8 +9,8 @@ import {ResultsEntity} from '../model/movie';
 })
 export class SlideComponent implements OnInit {
 
-  @Input() titleSlide: string;
-  @Input() movies: ResultsEntity[];
+  @Input() titleSlide;
+  @Input() movies;
   constructor(private movieService: MovieService) {
     // this.loadImgs();
   }
