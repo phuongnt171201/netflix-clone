@@ -1,61 +1,32 @@
-h2 {
-  font-size: x-large;
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
   color: white;
 }
-
-/*body {*/
-/*  background-color: #1d1d1d;*/
-/*}*/
-
-/*img {*/
-/*  border-radius: 5px;*/
-/*}*/
-
-/*!*.movie {*!*/
-/*!*  margin: 20px 0;*!*/
-
-/*!*.movie__images {*!*/
-
-/*div.thumbnails .carousel {*/
-/*  width: 100%;*/
-/*  display: inline-block;*/
-/*}*/
-
-/*.slick-item {*/
-/*  transition: all 0.3s ease;*/
-/*}*/
-
-/*.slick-item:hover {*/
-/*  transform: scale(1.02);*/
-/*  cursor: pointer;*/
-/*}*/
-
-.row_posters {
-  display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  padding: 20px;
-}
-
-.row_posters::-webkit-scrollbar {
-  display: none;
-}
-
-.row_poster{
-  width: 100%;
-  object-fit: contain;
-  max-height: 200px;
-  margin-right: 10px;
-  transition: transform 450ms;
-}
-
-.row_poster:hover {
-  transform: scale(1.08);
-}
-
-
-
-
-/*}*/
-/*}*/
-/*}*/

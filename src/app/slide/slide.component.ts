@@ -18,6 +18,8 @@ export class SlideComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // separateMovies()
+
   // loadImgs() {
   //   this.title =
   //   this.movieService.getNetflixOriginals(this.API_KEY).subscribe((res: any) => {
